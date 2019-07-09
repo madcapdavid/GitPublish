@@ -1,0 +1,846 @@
+/*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+.micro-response :root
+{
+	--Brand: #076685;
+	--Black: #000000;
+	--Dark-Gray: #ff0000;
+	--Medium-Gray: #ff0000;
+	--Light-Gray: #d0d3d5;
+	--White: #ffffff;
+}
+
+.micro-response
+{
+	font-family: Arial, Avenir, Myriad;
+}
+
+/* Backmatter */
+
+.micro-response div.GlossaryPageDefinition
+{
+	font-size: 10pt;
+}
+
+.micro-response div.GlossaryPageHeading
+{
+	font-size: 21pt;
+	font-weight: normal;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	border-bottom-color: var(--Medium-Gray);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	text-align: left;
+	color: inherit;
+	padding-left: 10px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-right: 10px;
+	background-image: url('../Images/Backmatter-Heading-Background.png');
+	background-repeat: no-repeat;
+}
+
+.micro-response div.GlossaryPageTerm
+{
+	font-size: 12pt;
+	font-weight: bold;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.micro-response MadCap|glossaryProxy
+{
+	border-top: none;
+}
+
+.micro-response MadCap|indexProxy
+{
+	border-top: none;
+}
+
+.micro-response p.Index1
+{
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+.micro-response p.Index2
+{
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.micro-response p.IndexHeading
+{
+	font-size: 21pt;
+	font-weight: normal;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	border-bottom-color: var(--Medium-Gray);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	text-align: left;
+	color: inherit;
+	padding-left: 10px;
+	padding-bottom: 20px;
+	padding-top: 12px;
+	padding-right: 10px;
+	background-image: url('../Images/Backmatter-Heading-Background.png');
+	background-repeat: no-repeat;
+}
+
+/* Content */
+
+.micro-response img
+{
+	border: none;
+	max-width: 100%;
+}
+
+.micro-response p
+{
+	font-size: 12.0pt;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 20pt;
+	letter-spacing: 0.25;
+	widows: 3;
+	orphans: 3;
+}
+
+.micro-response p.table-text
+{
+	font-size: 12pt;
+}
+
+/* Frontmatter */
+
+.micro-response hr.title-page
+{
+	border: solid 0px transparent;
+	background-color: var(--Light-Gray);
+	height: 1px;
+	width: 100%;
+	margin-bottom: 30px;
+	margin-top: 370px;
+}
+
+.micro-response MadCap|tocProxy
+{
+	border-top: none;
+	margin-right: 0.25in;
+	mc-toc-depth: 1;
+}
+
+.micro-response p.created-using-flare
+{
+	color: var(--Dark-Gray);
+	font-weight: bold;
+	margin-top: 18px;
+	font-size: 9pt;
+	line-height: 15pt;
+	text-transform: uppercase;
+}
+
+.micro-response p.title
+{
+	font-size: 55pt;
+	line-height: 65pt;
+	margin-top: 85px;
+}
+
+.micro-response p.title-page-footer
+{
+	color: var(--Dark-Gray);
+	font-size: 9pt;
+	line-height: 15pt;
+}
+
+.micro-response p.TOC1
+{
+	color: var(--Dark-Gray);
+	font-size: 19pt;
+	font-weight: normal;
+	line-height: 21pt;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	page-break-after: avoid;
+}
+
+.micro-response p.TOC2
+{
+	color: var(--Dark-Gray);
+	font-size: 15pt;
+	font-weight: normal;
+	line-height: 21pt;
+	margin-bottom: 13px;
+	margin-left: .5in;
+	margin-top: 13px;
+}
+
+.micro-response p.TOC3
+{
+	color: var(--Dark-Gray);
+	font-size: 13pt;
+	line-height: 21pt;
+	font-weight: normal;
+	margin-bottom: 10px;
+	margin-left: 1in;
+	margin-top: 10px;
+}
+
+/* Generic classes */
+
+.micro-response .center
+{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	float: none !important;
+	text-align: center;
+}
+
+/* Headings */
+
+.micro-response h1
+{
+	font-weight: bold;
+	font-size: 24.0pt;
+	color: var(--Dark-Gray);
+	margin-top: 0;
+}
+
+.micro-response h1.home
+{
+	font-weight: bold;
+	font-size: 24.0pt;
+	color: var(--Dark-Gray);
+	text-align: center;
+}
+
+.micro-response h2
+{
+	font-weight: bold;
+	font-size: 18.0pt;
+	page-break-before: always;
+}
+
+.micro-response h3
+{
+	font-weight: bold;
+	font-size: 14.0pt;
+}
+
+.micro-response h4
+{
+	font-weight: bold;
+	font-size: 12.0pt;
+}
+
+.micro-response h5
+{
+	font-weight: bold;
+	font-size: 10.0pt;
+}
+
+.micro-response h6
+{
+	font-weight: bold;
+	font-size: 8.0pt;
+}
+
+/* Home page topic */
+
+.micro-response .nav-search	/*Does not display search in Top Navigation for desktop*/
+{
+	display: none;
+}
+
+.micro-response div.accent
+{
+	background-color: var(--Medium-Gray);
+}
+
+.micro-response div.home-layout
+{
+	padding: 2% 20%;
+}
+
+.micro-response div.home-section
+{
+	padding: 5%;
+	border-bottom: solid 1px var(--Light-Gray);
+}
+
+.micro-response div.home-section:last-of-type
+{
+	border-bottom: none;
+}
+
+.micro-response div.home-tiles	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.micro-response div.home-tiles::before
+{
+	content: ' ';
+	display: table;
+}
+
+.micro-response div.home-tiles::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+.micro-response div.home-tiles > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.micro-response div.home-tiles > div:nth-child(1)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+.micro-response div.home-tiles > div:nth-child(2)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+.micro-response div.home-tiles > div:nth-child(3)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+.micro-response div.quick-links	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.micro-response div.quick-links::before
+{
+	content: ' ';
+	display: table;
+}
+
+.micro-response div.quick-links::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+.micro-response div.quick-links > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.micro-response div.quick-links > div:nth-child(1)
+{
+	width: 16.66666%;
+	margin-left: 2%;
+}
+
+.micro-response div.quick-links > div:nth-child(2)
+{
+	width: 16.66666%;
+	margin-left: 3%;
+}
+
+.micro-response div.quick-links > div:nth-child(3)
+{
+	width: 16.66666%;
+	margin-left: 3%;
+}
+
+.micro-response div.quick-links > div:nth-child(4)
+{
+	width: 16.66666%;
+	margin-left: 3%;
+}
+
+.micro-response div.quick-links > div:nth-child(5)
+{
+	width: 16.66666%;
+	margin-left: 3%;
+}
+
+.micro-response div.quick-links *	/*Text-align center set to all elements within div.quick-links*/
+{
+	text-align: center;
+}
+
+.micro-response div.topic-hero
+{
+	padding: 8% 0;
+	background-image: url('../Images/Hero-Background.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.micro-response div.topic-hero h1
+{
+	color: var(--White);
+	font-size: 48pt;
+	text-align: center;
+}
+
+.micro-response html.home-topic	/*Used on Home.htm topic for styles set only on the home topic*/
+{
+	
+}
+
+.micro-response html.home-topic .main-section > .outer-row	/*Overrides padding set in the skin*/
+{
+	max-width: 100%;
+	padding: 0;
+}
+
+.micro-response img.home-tile
+{
+	max-width: 50%;
+}
+
+/* Links */
+
+.micro-response a
+{
+	color: var(--Brand);
+}
+
+.micro-response a:link
+{
+	color: var(--Brand);
+}
+
+.micro-response a:visited
+{
+	color: var(--Brand);
+}
+
+.micro-response a.home-tiles
+{
+	color: var(--Dark-Gray);
+	font-size: 13pt;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.micro-response MadCap|dropDown
+{
+	border-bottom: 1px solid var(--Light-Gray);
+	mc-image-position: left;
+	mc-image-spacing: 10px;
+	mc-open-image: url('../Images/Minus.png');
+	mc-closed-image: url('../Images/Plus.png');
+	padding: 10px 0;
+}
+
+.micro-response MadCap|dropDownBody
+{
+	padding: 10px 30px 0;
+}
+
+.micro-response MadCap|dropDownHotspot
+{
+	cursor: hand;
+	text-decoration: none;
+	color: var(--Dark-Gray);
+	font-size: 20pt;
+	font-weight: bold;
+	border-bottom: none;
+}
+
+.micro-response MadCap|expandingBody
+{
+	color: var(--Dark-Gray);
+	font-style: italic;
+}
+
+.micro-response MadCap|expandingHead
+{
+	font-style: italic;
+	font-weight: normal;
+	cursor: hand;
+	text-decoration: none;
+	color: var(--Brand);
+}
+
+.micro-response MadCap|xref
+{
+	font-weight: bold;
+	mc-format: '{para}';
+	text-decoration: underline;
+	color: var(--Brand);
+}
+
+/* Lists */
+
+.micro-response li
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+.micro-response li p
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+.micro-response ol,
+.micro-response ul
+{
+	letter-spacing: .25;
+	line-height: 20pt;
+}
+
+/* Master pages */
+
+.micro-response div.home-footer
+{
+	padding: 2% 5%;
+	background-color: var(--Brand);
+}
+
+.micro-response div.side-content	/*Used on OtherTopics.flmsp for the search-bar and menu*/
+{
+	width: 300px;
+	float: right;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+.micro-response div.topic-layout
+{
+	padding-top: 4%;
+}
+
+.micro-response MadCap|breadcrumbsProxy
+{
+	border-bottom-width: 0;
+	color: var(--Dark-Gray);
+}
+
+.micro-response p.footer
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 13pt;
+	color: var(--White);
+}
+
+.micro-response p.footer-sub
+{
+	color: var(--White);
+	font-size: 14pt;
+	margin-top: 14px;
+}
+
+/* Page layout */
+
+.micro-response p.frame-footer-page-number
+{
+	color: var(--Medium-Gray);
+	font-size: 11pt;
+	font-weight: bold;
+	text-align: right;
+}
+
+.micro-response p.frame-footer-text
+{
+	color: var(--Medium-Gray);
+	font-size: 11pt;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* Master page */
+
+.micro-response div.home-footer
+{
+	background-color: var(--Brand);
+	padding: 2% 5%;
+}
+
+.micro-response p.footer
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 13pt;
+	color: var(--White);
+}
+
+.micro-response p.footer-sub
+{
+	color: var(--White);
+	font-size: 14pt;
+	margin-top: 14px;
+}
+
+@media only screen and (max-width: 1279px)
+{
+	/* Home page topic */
+
+	.micro-response .nav-search	/*Displays search in Top Navigation for tablet/mobile*/
+	{
+		display: block;
+	}
+
+	.micro-response div.side-content	/*Removes search-bar and menu set in topic in tablet*/
+	{
+		display: none;
+	}
+
+	.micro-response html.home-topic .nav-search	/*Will not display search in Top Navigation on home page*/
+	{
+		display: none;
+	}
+
+	.micro-response html.home-topic .body-container
+	{
+		margin-left: 0;
+	}
+
+	.micro-response div.quick-links > div:nth-child(1)
+	{
+		width: 24%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.quick-links > div:nth-child(2)
+	{
+		width: 24%;
+		margin-left: 14%;
+	}
+
+	.micro-response div.quick-links > div:nth-child(3)
+	{
+		width: 24%;
+		margin-left: 14%;
+	}
+
+	.micro-response div.quick-links > div:nth-child(4)
+	{
+		width: 24%;
+		margin-left: 19%;
+	}
+
+	.micro-response div.quick-links > div:nth-child(5)
+	{
+		width: 24%;
+		margin-left: 14%;
+	}
+
+	.micro-response div.home-tiles > div:nth-child(1)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.home-tiles > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.home-tiles > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	/* Home page topic */
+
+	.micro-response div.home-layout
+	{
+		padding: 2% 5%;
+	}
+
+	.micro-response div.home-section
+	{
+		padding: 10% 0;
+	}
+
+	.micro-response img.home-tile
+	{
+		max-width: 25%;
+	}
+
+	.micro-response div.home-tiles > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.home-tiles > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.home-tiles > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.quick-links > div:nth-child(1)
+	{
+		width: 49%;
+		margin-left: 0;
+	}
+
+	.micro-response div.quick-links > div:nth-child(2)
+	{
+		width: 49%;
+		margin-left: 2%;
+	}
+
+	.micro-response div.quick-links > div:nth-child(3)
+	{
+		width: 49%;
+		margin-left: 0;
+	}
+
+	.micro-response div.quick-links > div:nth-child(4)
+	{
+		width: 49%;
+		margin-left: 2%;
+	}
+
+	.micro-response div.quick-links > div:nth-child(5)
+	{
+		width: 49%;
+		margin-left: 25.5%;
+	}
+
+	.micro-response div.topic-hero
+	{
+		padding: 15% 0;
+	}
+
+	.micro-response div.topic-hero h1
+	{
+		font-size: 36pt;
+	}
+}
+
+@media print
+{
+	.micro-response
+	{
+		color: var(--Black);
+		font-size: 11pt;
+		line-height: 13pt;
+		margin: 8px;
+	}
+
+	/* Content */
+
+	.micro-response p
+	{
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
+	.micro-response p.table-text
+	{
+		font-size: 11pt;
+	}
+
+	/* Headings */
+
+	.micro-response h1
+	{
+		color: var(--Brand);
+		font-size: 25pt;
+		line-height: 27pt;
+		margin-bottom: 20px;
+	}
+
+	.micro-response h2
+	{
+		font-size: 21pt;
+		font-weight: normal;
+		line-height: 23pt;
+		margin-bottom: 18px;
+		margin-top: 40px;
+	}
+
+	.micro-response h3
+	{
+		font-size: 15pt;
+		font-weight: bold;
+		line-height: 17pt;
+		margin-bottom: 15px;
+		margin-top: 40px;
+	}
+
+	/* Links */
+
+	.micro-response MadCap|xref
+	{
+		font-weight: normal;
+		mc-format: '{quote}{para}{quote} {pageref}';
+		text-decoration: none;
+	}
+}
+
+.micro-response #results-heading
+{
+	font-size: 1em;
+	margin-bottom: 0px;
+	padding-bottom: 5px;
+	margin-top: -20px;
+}
+
+.micro-response ul.asdf
+{
+	list-style-image: none;
+}
+
+.micro-response ul.asdf > li::marker
+{
+	font-family: Webdings;
+	content: 'u';
+}
+
+.micro-response MadCap|dropDown
+{
+	mc-closed-image: url('../Images/DropDownClosed.svg');
+}
+
+body.test.micro-response
+{
+	font-family: Arial, Avenir, Myriad;
+	background: url('../Images/cat.jpg');
+}
+
+.micro-response pre
+{
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	word-wrap: break-word;
+}
+
