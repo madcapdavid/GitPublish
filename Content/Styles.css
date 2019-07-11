@@ -1,0 +1,2393 @@
+/*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+/* STYLES.CSS  embedded custom fonts for Segoe and Open Sans; Arial & san-serif are fallback in Font Sets */
+
+@font-face 
+{
+	font-family: 'Segoe Print';
+	src: url(../Fonts/segoepr.ttf);
+}
+
+@font-face 
+{
+	font-family: 'Segoe Print Bold';
+	src: url(../Fonts/segoeprb.ttf);
+}
+
+@font-face 
+{
+	font-family: 'Segoe Script';
+	src: url(../Fonts/segoesc.ttf);
+}
+
+@font-face 
+{
+	font-family: 'Segoe Script Bold';
+	src: url(../Fonts/segoescb.ttf);
+}
+
+@font-face 
+{
+	font-family: 'Segoe UI';
+	src: url(../Fonts/segoeui.ttf);
+}
+
+@font-face 
+{
+	font-family: 'Segoe UI Bold';
+	src: url(../Fonts/segoeuib.ttf);
+}
+
+@font-face 
+{
+	font-family: 'Segoe UI Italic';
+	src: url(../Fonts/segoeuii.ttf);
+}
+
+@font-face 
+{
+	font-family: 'Segoe UI Bold Italic';
+	src: url(../Fonts/segoeuiz.ttf);
+}
+
+@font-face 
+{
+	font-family: 'Segoe UI Light';
+	src: url(../Fonts/segoeuil.ttf);
+}
+
+@font-face 
+{
+	font-family: 'Segoe UI Light Italic';
+	src: url(../Fonts/seguili.ttf);
+}
+
+@font-face 
+{
+	font-family: 'Segoe UI Black';
+	src: url(../Fonts/seguibl.ttf);
+}
+
+@font-face 
+{
+	font-family: 'Segoe UI Black Italic';
+	src: url(../Fonts/seguibli.ttf);
+}
+
+@font-face 
+{
+	font-family: 'Segoe UI Emoji';
+	src: url(../Fonts/seguiemj.ttf);
+}
+
+@font-face 
+{
+	font-family: 'Segoe UI Historic';
+	src: url(../Fonts/seguihis.ttf);
+}
+
+@font-face 
+{
+	font-family: 'Segoe UI Semibold';
+	src: url(../Fonts/seguisb.ttf);
+}
+
+@font-face 
+{
+	font-family: 'Segoe UI Semibold Italic';
+	src: url(../Fonts/seguisbi.ttf);
+}
+
+@font-face 
+{
+	font-family: 'Segoe UI Semilight Italic';
+	src: url(../Fonts/seguisli.ttf);
+}
+
+@font-face 
+{
+	font-family: 'Segoe UI Symbol';
+	src: url(../Fonts/seguisym.ttf);
+}
+
+@font-face 
+{
+	font-family: 'OpenSans Regular';
+	src: url(../Fonts/OpenSans-Regular.ttf);
+}
+
+@font-face 
+{
+	font-family: 'OpenSans Italic';
+	src: url(../Fonts/OpenSans-Italic.ttf);
+}
+
+@font-face 
+{
+	font-family: 'OpenSans Bold';
+	src: url(../Fonts/OpenSans-Bold.ttf);
+}
+
+@font-face 
+{
+	font-family: 'OpenSans BoldItalic';
+	src: url(../Fonts/OpenSans-BoldItalic.ttf);
+}
+
+@font-face 
+{
+	font-family: 'OpenSans Light';
+	src: url(../Fonts/OpenSans-Light.ttf);
+}
+
+@font-face 
+{
+	font-family: 'OpenSans LightItalic';
+	src: url(../Fonts/OpenSans-LightItalic.ttf);
+}
+
+@font-face 
+{
+	font-family: 'OpenSans SemiBold';
+	src: url(../Fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face 
+{
+	font-family: 'OpenSans SimiboldItalic';
+	src: url(../Fonts/OpenSans-SimiboldItalic.ttf);
+}
+
+@font-face 
+{
+	font-family: 'OpenSans ExtraBold';
+	src: url(../Fonts/OpenSans-ExtraBold.ttf);
+}
+
+@font-face 
+{
+	font-family: 'OpenSans ExtraBoldItalic';
+	src: url(../Fonts/OpenSans-ExtraBoldItalic.ttf);
+}
+
+body
+{
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+}
+
+html.home-topic	/*Used on home topic to override padding set in the skin*/
+{
+	padding: 0;
+}
+
+html.home-topic .body-container	/*Overrides padding set in the skin*/
+{
+	padding: 0;
+}
+
+html.home-topic .main-section > .outer-row	/*Overrides padding set in the skin when in tablet/mobile*/
+{
+	max-width: 100%;
+	padding: 0;
+}
+
+h1
+{
+	color: #222;
+	font-weight: normal;
+	margin: 20px 0px 20px;
+	font-size: 24pt;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+}
+
+h2	/* CER CHG FONT COLOR */
+{
+	font-weight: normal;
+	color: #4695b2;
+	margin: 10px 0px;
+	font-size: 22.0pt;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+}
+
+h2.cerQuickLinks	/*making hdg bit larger for quick links header*/
+{
+	font-weight: normal;
+	color: #4695b2;
+	font-size: 22.0pt;
+	margin: 10px 0px;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+}
+
+h3	/* CER CHG FONT COLOR */
+{
+	margin: 12px 0px 10px;
+	font-size: 15pt;
+	font-family: 'Segoe UI Semibold', 'Open Sans Semibold', Arial, sans-serif;
+	font-weight: normal;
+	color: #444444;
+}
+
+h3.h3-TealBold	/*CER ADDED*/
+{
+	font-weight: bold;
+	color: #4695b2;
+	margin: 30px 0px 10px;
+	font-size: 11pt;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+}
+
+h3.h3-Charcoal	/* - - CER MADE =  to support H3 in topics - - - */
+{
+	font-weight: bold;
+	color: #ffffff;
+	font-family: 'Lucida Sans';
+	border: solid 4px #545353;
+	letter-spacing: .75px;
+	font-size: 12pt;
+	margin: 30px 0% 10px;
+	padding: 6px 0px;
+	line-height: 14pt;
+	background: #545353;
+}
+
+h3.h3-TealSubsection	/* CER MADE =  H3 TEAL nice accent color for the gray theme */
+{
+	letter-spacing: .75px;
+	background: #b0e0e6;
+	border: solid 4px #b0e0e6;
+	font-size: 1.08em;
+	line-height: 1.12em;
+	color: #232323;
+	font-weight: bold;
+	margin: 30px 20% 10px 0px;
+	padding: 6px 0px;
+	font-family: 'Lucida Sans', 'Segoe UI', Arial, sans-serif;
+}
+
+h3.h3-TealBold-13pt	/*cer*/
+{
+	font-weight: bold;
+	color: #4695b2;
+	margin: 30px 0% 10px;
+	font-size: 13pt;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+}
+
+h3.h3-TealTaller
+{
+	color: #4695b2;
+	margin: 30px 0% 10px;
+	font-size: 16pt;
+	font-family: 'Segoe UI Semibold', 'Open Sans Semibold', Arial, sans-serif;
+	font-weight: normal;
+}
+
+h4	/* CER CHG FONT COLOR */
+{
+	color: #4d4c4c;
+	font-style: normal;
+	margin: 30px 0px 10px;
+	font-family: 'Segoe UI Semibold', 'Open Sans Semibold', Arial, sans-serif;
+	font-size: 15pt;
+	font-weight: normal;
+}
+
+h4.cer-h4-indented
+{
+	font-weight: bold;
+	font-size: 12.0pt;
+	font-family: Arial;
+	color: #4d4c4c;
+	margin: 10px 0px 10px 20px;
+	font-style: italic;
+}
+
+h5
+{
+	font-weight: bold;
+	font-size: 10.0pt;
+}
+
+h6
+{
+	font-weight: bold;
+	font-size: 8.pt;
+}
+
+ol,
+ul
+{
+	letter-spacing: .25;
+	line-height: 20pt;
+}
+
+img
+{
+	border: none;
+	max-width: 100%;
+	margin: 0px 0px 0px 20px;
+	mc-thumbnail: hover;
+}
+
+img.cerImgTinyTrim
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+img.cerImgPaddingQkLinks
+{
+	border: none;
+	max-width: 100%;
+	padding: 5px;
+	margin: 0px;
+	width: 50px;
+	mc-thumbnail: none;
+}
+
+a:link	/* DARK TEAL LINK TEXT */
+{
+	color: #076685;
+	font-family: 'Segoe UI Semibold', 'Open Sans Semibold', Arial, sans-serif;
+}
+
+a:visited	/* DARK TEAL LINK TEXT */
+{
+	color: #076685;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+}
+
+a.cerforTealQkLinkTile-TEXT	/*cer controls font-face, size, color, weight on Quick Link Tiles*/
+{
+	font-family: 'Segoe UI Semibold', 'Open Sans Semibold', Arial, sans-serif;
+	color: #333333;
+	font-size: 11pt;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.cerforPtag-Tealfont-LinkText	/*CER sets Teal font-color for inline LinkText within the paragraph- inherit fontSize + NO UNDERSCORE*/
+{
+	text-decoration: none;
+	color: #4695b2;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+}
+
+a.cerforTealQkLinkTile-TEXTsm	/*cer lower fontsize on QUICK LINK Tiles*/
+{
+	color: #333;
+	font-size: 11pt;
+	text-decoration: none;
+	font-family: 'Segoe UI Light', 'Open Sans Light', Arial, sans-serif;
+	font-weight: normal;
+}
+
+a.Popup
+{
+	
+}
+
+/* - - - MADCAP SPECIAL CONTROLS starts here--dropdowns, expanding text, etc.; CER mods are indicated - - - */
+
+MadCap|bodyProxy	/* Flare masterpage: body proxy */
+{
+	margin: 30px 0px 0px;
+}
+
+MadCap|topicToolbarProxy	/* Flare masterpage: Topic Toolbar CONTROL */
+{
+	text-align: right;
+	background: #f5f5f5;
+}
+
+MadCap|breadcrumbsProxy	/* Flare masterpage: breadcrumb proxy */
+{
+	border-bottom-width: 0;
+	color: #888888;
+	font-style: italic;
+}
+
+MadCap|xref	/* Flare TOPIC XREF CONTROL */
+{
+	color: #076685;
+	font-weight: bold;
+	mc-format: '{para}';
+	text-decoration: underline;
+}
+
+MadCap|xref.cerXrefDkTeal	/* Flare TOPIC XREF CONTROL (cer clone to control font family as semibold) */
+{
+	color: #076685;
+	mc-format: '{para}';
+	font-weight: normal;
+	font-family: 'Open Sans Semibold', 'Segoe UI Semibold', Arial, sans-serif;
+	text-decoration: underline;
+}
+
+MadCap|glossaryTerm	/* Flare TOPIC GLOSSARY TERM CONTROL */
+{
+	color: #2d7691;
+	font-weight: normal;
+	font-style: normal;
+	mc-term-display: expanding-text;
+}
+
+MadCap|glossaryTerm.Expanding	/* Flare TOPIC GLOSS TERM EXPANDING CONTROL */
+{
+	color: #4f91a9;
+}
+
+MadCap|expandingHead	/* Flare TOPIC: expandingText HEAD */
+{
+	cursor: hand;
+	text-decoration: none;
+	font-family: 'Segoe UI Semibold', 'Open Sans Semibold', Arial, sans-serif;
+	color: #68a5bb;
+	/* slightly lighter teal than body since it is bolded */
+	font-size: inherit;
+	/* font-size should remain set to inherit to allow expanding text to synch with surrounding text  */
+	font-weight: bold;
+	font-style: normal;
+	font-variant: small-caps;
+	/* CER ADDED small caps - type the  HEAD-TEXT in lower case to achieve the SMALL CAPS effect */
+	letter-spacing: .33px;
+	border: solid 0px #ffffff;
+}
+
+MadCap|expandingHead.mcExpHead-more	/* Flare TOPIC: expandingText HEAD (cer - made to tag more info)  */
+{
+	cursor: hand;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: bold;
+	border: none 2px #000000;
+	color: #68a5bb;
+	font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
+	font-size: 11pt;
+}
+
+MadCap|expandingHead.MoreInfo	/* Flare TOPIC: expandingText HEAD - CER MADE = "MORE" in small caps - - - */
+{
+	cursor: hand;
+	color: #1e90ff;
+	font-style: normal;
+	font-size: 10pt;
+	font-family: Arial;
+	font-weight: bold;
+	text-decoration: none;
+	font-variant: small-caps;
+}
+
+MadCap|expandingHead.mcExpHd-ReqAstrisk	/*CER ADDED = for expand text head that shows red astrisk for required component*/
+{
+	cursor: hand;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: 1.08em;
+	letter-spacing: .33px;
+	color: #b22222;
+	font-family: Arial;
+}
+
+MadCap|expandingBody
+{
+	font-family: 'Segoe UI Semibold', 'Open Sans Semibold', Arial, sans-serif;
+	color: #478196;
+	/* slightly darker teal than the head */
+	font-size: inherit;
+	/* font-size should remain set to inherit to allow expanding text to synch with surrounding text  */
+	font-style: normal;
+	font-weight: normal;
+}
+
+MadCap|expandingBody.mcExpBody	/*cer - for notes with colored BGs*/
+{
+	color: #222222;
+}
+
+MadCap|expandingBody.mcExpBod-ReqTxt-Gray	/* CER ADDED for expand text that describes requirement */
+{
+	font-size: 0.89em;
+	color: #b22222;
+}
+
+MadCap|expandingBody.MoreInfoGY	/* Flare TOPIC: expandingText BODY - CER MADE = gray text initialy - - - */
+{
+	color: #696969;
+	font-weight: normal;
+	font-variant: normal;
+	font-style: normal;
+	font-family: Arial;
+	font-size: 10pt;
+}
+
+/* - - - - BEGINNING OF THE MADCAP DROP-DOWN CONTROLS - - - - */
+
+MadCap|dropDown
+{
+	mc-image-position: left;
+	mc-open-image: url('../Images/minus.png');
+	mc-closed-image: url('../Images/plus.png');
+	mc-image-spacing: 20px;
+	/* default setting 1px solid #f5f5f5 */
+	/*  LOOK OUT FOR RUNTIME OVERRIDE ON IMAGE SPACING from either padding-left or mc-img-space */
+	margin: 3px 0px 3px 0px;
+	padding: 3px 0px 3px 0px;
+	padding-left: 0px;
+	border-bottom: 2px solid #dddddd;
+}
+
+MadCap|dropDown.cer-DD-Lvl3	/*cer- shadded BG DD area; for lvl3-DD that's nested in a Level2-DD */
+{
+	mc-open-image: url('../../Images/minus.png');
+	mc-closed-image: url('../../Images/plus.png');
+	mc-image-position: left;
+	mc-image-spacing: 20px;
+	margin: 10px 0px;
+	/* controls whether a bottom border is visible and its color */
+	border-style: solid;
+	/* BG Shadding very light gray */
+	border-width: 12px;
+	/* bdr-width induces small buffer that keeps text away from the BG edge */
+	padding: 8px 0px;
+	background-color: #dedede;
+	border-bottom: 1px solid #DEDEDE;
+	border-color: #DEDEDE;
+}
+
+MadCap|dropDown.cer-DD-Lvl4	/*cer- shadded BG on DD area; for Lvl4-DD that's nested in Lvl3-DD*/
+{
+	mc-open-image: url('../../Images/minus.png');
+	mc-closed-image: url('../../Images/plus.png');
+	mc-image-position: left;
+	margin: 10px 0px;
+	/* BG Shadding medium light gray*/
+	/* controls whether a bottom border is visible and its color */
+	border-style: solid;
+	border-width: 4px;
+	/* bdr-width induces small buffer that keeps text away from the BG edge */
+	padding: 11px 0px;
+	background-color: #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	border-color: #CCCCCC;
+}
+
+MadCap|dropDownHead.wizardSet	/* - - CER MADE - - - */
+{
+	color: inherit;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+MadCap|dropDownHead.cerExample	/*cer - DD Head for Example Block or Notes Block */
+{
+	font-family: 'Segoe UI Semibold', 'Open Sans Semibold', Arial, sans-serif;
+	font-size: 12pt;
+	font-weight: normal;
+	color: #333333;
+}
+
+MadCap|dropDownHead.DD-TealHead	/*[CER added to support style]*/
+{
+	font-weight: bold;
+	letter-spacing: .5px;
+	line-height: 1.2em;
+	margin: 10px 0% 10px 0px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	font-size: 18pt;
+	background-color: #c5e4ee;
+	border: solid 4px #c5e4ee;
+	color: #111111;
+	font-family: 'Segoe UI Semibold', 'Open Sans Semibold', Arial, sans-serif;
+}
+
+MadCap|dropDownHead.DD-TealHead-charc	/* cer created for some reason but unsure where used*/
+{
+	font-family: 'Lucida Sans', 'Segoe UI', 'Open Sans', Arial, sans-serif;
+	color: #ffffff;
+	font-size: 12pt;
+	font-weight: bold;
+	letter-spacing: .5px;
+	margin: 30px 0% 10px;
+	padding: 6px 0px;
+	background: #545353;
+	/* bg color of head = dark gray  */
+	border: solid 4px #545353;
+	line-height: 14pt;
+}
+
+MadCap|dropDownHead.DD-WhiteHead	/*cer cloned from tealHead but users white background*/
+{
+	color: #232323;
+	font-family: 'Lucida Sans', 'Segoe UI', Arial, sans-serif;
+	font-size: 1.08em;
+	font-weight: bold;
+	letter-spacing: .5px;
+	line-height: 1.2em;
+	margin: 8px 0% 8px;
+	padding: 6px 0px;
+	background: #ffffff;
+	border: solid 4px #ffffff;
+}
+
+MadCap|dropDownHead.cerTealH3-equiv	/*cer - mcDDhead to match H3 and give me dropdowns*/
+{
+	font-weight: bold;
+	color: #4695b2;
+	font-size: 13pt;
+}
+
+MadCap|dropDownHotspot
+{
+	cursor: hand;
+	text-decoration: none;
+	color: #45494c;
+	/* dk gray  */
+	border-bottom: none;
+	padding-left: 20px;
+	font-size: 17pt;
+	font-weight: normal;
+}
+
+MadCap|dropDownHotspot.cerTeal-EquivH3
+{
+	cursor: hand;
+	text-decoration: none;
+	border-bottom: none;
+	color: #4695b2;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+	font-size: 16pt;
+	font-weight: normal;
+	margin: 6px;
+}
+
+MadCap|dropDownHotspot.hotspotWhitefont	/*cer for a dropdown head with dark bg color - in case where font color on DD Head style-class isnt rendering*/
+{
+	color: #ffffff;
+}
+
+MadCap|dropDownBody
+{
+	padding: 9px 0px;
+}
+
+/* - - -  END OF DROP-DOWN CONTROLS - - -  UNLESS ADDED LATER MAY BE BELOW HERE BUT SHOULD MOVE UP ASAP - - - */
+
+div
+{
+	line-height: 1.2em;
+}
+
+div.home-footer
+{
+	background-color: #076685;
+	padding: 2% 5%;
+}
+
+div.home-layout
+{
+	padding: 2% 5%;
+}
+
+div.home-section	/* this was used on home page for segments divided by bottom border */
+{
+	padding: 3% 0% 5%;
+	border-bottom: none 1px #dadada;
+}
+
+div.content-container	/*Wraps content on masterpage + provides white BG behind topics.  
+						  [CER copied from dashboard MainStyles.CSS file ] 		*/
+{
+	margin-right: 0;
+	background-color: #FFFFFF;
+	padding: 25px;
+	min-height: 95vh;
+}
+
+div.side-content	/* Right-side Container: can be use to float menu proxy to right side of page [copied from SG Dashboard proj MainStyles.CSS ] */
+{
+	float: right;
+	margin-left: 10px;
+	/* i think this keeps content from running under or into menu block */
+	margin-bottom: 10px;
+	width: 33.33%;
+	/*adjusts menu to use one third of the screen width when size changes */
+}
+
+div.side-content-toptoolbar	/*Container for TopicToolbar proxy [copied from dashboard proj Main Styles.CSS] */
+{
+	float: right;
+	margin-bottom: 10px;
+	background-color: transparent;
+	align: right;
+	margin-left: 10px;
+}
+
+/*  - - - -  BELOW THIS LINE ARE THE HOME PAGE STYLE-CLASSES for the Side-Nav Template - - - */
+
+div.topic-hero	/* DEPRECATED - NOT USED FOR TOPICS*/
+{
+	padding: 5%;
+	background-image: url('../Images/Hero-Background.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+div.home-tiles	/* This supports responsive-layout used for a row of 2 tiles on TOPIC pages (i.e. div.class). 
+[MFG ASIS RESULTS: 2xTiles/row @PC, and 'stacks' to  1xTile/per row @mobile.  
+Design use intention = home page may not be suitable for topics but should be conditioned if applicable. -cer] */
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.home-tiles::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.home-tiles::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.home-tiles > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #b9bec1;
+	padding: 2%;
+}
+
+div.home-tiles > div:nth-child(1)
+{
+	width: 48%;
+	margin-left: 0%;
+}
+
+div.home-tiles > div:nth-child(2)
+{
+	width: 48%;
+	margin-left: 4%;
+}
+
+div.home-tiles-layout	/*This supports responsive-layout  used for 2xTILES per Row  (div class) in your stylesheet. */
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.home-tiles-layout::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.home-tiles-layout::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.home-tiles-layout > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.home-tiles-layout > div:nth-child(1)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.home-tiles-layout > div:nth-child(2)
+{
+	width: 66.66667%;
+	margin-left: 0%;
+}
+
+div.home-tiles-layout p
+{
+	line-height: 1.2;
+}
+
+/* - - -  - START QUICK LINKS 5X TILES PER ROW  - - - - - - - */
+
+div.quick-links	/* supports responsive-layout for Quick Links on topic pages and landing pages.
+[MFG ASIS RESULTS: 5xTiles/row @PC, and 'stacks' to 2xTiles/row @tablet, and 1xTile/per row @mobile. 
+Design intent is to 'condition' the DIV BLOCK to display on screenOnly and exclude on printOnly. */
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.quick-links::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.quick-links::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.quick-links > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.quick-links > div:nth-child(1)
+{
+	width: 16.66666%;
+	margin-left: 2%;
+}
+
+div.quick-links > div:nth-child(2)
+{
+	width: 16.66666%;
+	margin-left: 3%;
+}
+
+div.quick-links > div:nth-child(3)
+{
+	width: 16.66666%;
+	margin-left: 3%;
+}
+
+div.quick-links > div:nth-child(4)
+{
+	width: 16.66666%;
+	margin-left: 3%;
+}
+
+div.quick-links > div:nth-child(5)
+{
+	width: 16.66666%;
+	margin-left: 3%;
+}
+
+div.quick-links *	/*Text-align center set to all elements within div.quick-links*/
+{
+	text-align: center;
+}
+
+div.quick-linksCaption	/*CER made for text caption below quick links Div (not nested in QL div)*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.cerQuickLinks-teal-c5e4ee
+{
+	line-height: 1.2em;
+	background-color: #c5e4ee;
+	border-radius: 10px;
+	margin: 0px 0px 12px;
+}
+
+div.cerQuickLinks-LiteGray	/*cer clone of teal tile but with gray bg*/
+{
+	line-height: 1.2em;
+	border-radius: 10px;
+	margin: 0px 0px 12px;
+	background-color: #dddddd;
+}
+
+/* end of quick links DIVs */
+/* - - - - - - - - - - - - - - - - -  BELOW are the STYLE-CLASSES for GENERAL CONTENT IN TOPICS OR PAGES. cer  - - - - - - - -  */
+
+div.content-container-CER	/*cer - copy of content-container but deleted min-height property*/
+{
+	margin-right: 0;
+	background-color: #FFF;
+	padding: 5px 5px 5px 25px;
+}
+
+div.topic-sections	/* CER MADE = for use in Wizard topics to control/tame width of dropdown sections*/
+{
+	margin: 10px 20% 10px 5%;
+}
+
+div.topic-snaps	/* CER MADE = for use in Wizard topics to control left margin placement of nested screenshots/thumbnails within the Content DIV */
+{
+	margin: 10px 10%;
+}
+
+div.List-section	/*inserts a btm border (gray )*/
+{
+	padding: 0px 0px 3px;
+	border-bottom: solid 2px #f5f5f5;
+	margin: 0px 0px 0px 20px;
+}
+
+div.topic-AdditTopicInfo	/*CER -(Teal) on addit. info for TopicIntro*/
+{
+	margin: 10px 6px 10px 7px;
+}
+
+div.divTopicMSP	/*CER div Master Page entire Topic*/
+{
+	line-height: 1.2em;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+}
+
+div.cer-topic-layout	/*cer for Topic MSP: controls topic width and padding for the overall content area*/
+{
+	width: 90%;
+	padding: 5px;
+}
+
+li
+{
+	font-size: 11pt;
+	line-height: 12pt;
+	padding: 0px;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+	margin: 15pt 0px 6pt;
+}
+
+li.bulletItem	/* - - CER MADE - POSSIBLY DEPRICATED - OR USED IN TABLES - - - */
+{
+	font-size: 11pt;
+	line-height: 13pt;
+	margin: 10px 20% 6px 8%;
+	font-family: 'Arial Narrow';
+}
+
+li.cer-Condense-Items
+{
+	line-height: 13pt;
+	padding: 0px;
+	font-size: 11pt;
+	font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
+	margin: 8px 0px;
+}
+
+li.numCaveatPrjNotes	/* - - CER MADE =  to support PROJECT NOTES topics - - - */
+{
+	font-family: Arial;
+	font-size: 10pt;
+	line-height: 12pt;
+	margin: 3px 10px 6px 6pt;
+}
+
+li.li-TopicIntroItemFirst	/* CER MADE = controls ARIAL font & line-height for FIRST LI or EVERY LI,  depending on what kind of spacing desired */
+{
+	font-size: 11pt;
+	line-height: 1.0em;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+}
+
+li.numberItem-noLfmargin	/* - - CER MADE = to reduce/mitigate any induced/added left-Margin in a list item - - - */
+{
+	font-size: 11pt;
+	line-height: 13pt;
+	font-family: 'Arial Narrow';
+	margin: 3px 2px 3px 1px;
+}
+
+li.li-ProjTbleNotes	/*cer project notes */
+{
+	margin: 3px 3px 3px 0pt;
+	font-size: 9pt;
+	font-family: 'Arial Narrow';
+}
+
+ul
+{
+	line-height: 1.35em;
+	font-size: inherit;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+}
+
+ul.ul-topic-IntroList	/*expect to use with "div.topic-IntroList" style class to provide margines*/
+{
+	font-family: inherit;
+	font-size: 11pt;
+	font-style: inherit;
+	font-weight: inherit;
+	line-height: 1.35em;
+}
+
+ul.ul-NoIndent	/*cer use in Table or ProjNotes*/
+{
+	letter-spacing: .25;
+	padding: 0px;
+	margin: 0px 0 0px 9px;
+}
+
+ul.PDF-CustomList01	/* - - CER MADE = created to support Project Notes topics - - - */
+{
+	list-style-type: disc;
+	list-style-image: none;
+}
+
+ul.PDF-CustomList01 > li::marker	/* - - CER MADE =  to support PDF special chars WINGDINGS 'v' used in topics - - - */
+{
+	font-family: Wingdings;
+	content: 'v';
+}
+
+ul.PDF-CustomList01 > li > ul	/* - - IDK if Flare default or CER MADE = created to support PDF  (UL List Item DISC) in topics - - - */
+{
+	list-style-type: disc;
+	list-style-image: none;
+}
+
+ul.PDF-CustomList01 > li > ul > li::marker	/* - - CER MADE =  to support PDF special chars WEBDINGS '4' used in topics - - - */
+{
+	font-family: Webdings;
+	content: '4';
+}
+
+center
+{
+	text-align: center;
+}
+
+button
+{
+	
+}
+
+sup.FootNote
+{
+	font-variant: inherit;
+	font-weight: bold;
+	color: #1e90ff;
+}
+
+p
+{
+	line-height: 16pt;
+	margin: 10px 0px;
+	letter-spacing: 0px;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+	font-size: 12pt;
+}
+
+p.footer
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 13pt;
+	color: #fff;
+}
+
+p.LI-Text-11pt	/* paragraph tag for LI tip line */
+{
+	letter-spacing: 0.25;
+	font-size: 11pt;
+	line-height: 14pt;
+	color: #333;
+	margin: 6pt 0px 2pt;
+}
+
+p.LI-hint-TealText-11pt	/*CER ADDED for TIPS AND HINTS that I nest in Line Items*/
+{
+	letter-spacing: 0.25;
+	font-size: 11pt;
+	color: #68a5bb;
+	line-height: 14pt;
+	margin: 6pt 5px 2pt 0px;
+}
+
+p.cer-Thumnail
+{
+	letter-spacing: 0.25;
+	font-size: 11pt;
+	line-height: 16pt;
+	color: inherit;
+	margin: 10px 0px 10px 10px;
+}
+
+p.paraItal	/* - - CER MADE - - - */
+{
+	font-style: italic;
+}
+
+p.ORoption	/* - - CER MADE next/or option DEPRICATED - - - */
+{
+	letter-spacing: 0.25;
+	margin: 10px 20% 10px 5%;
+	font-size: 11pt;
+	line-height: 16pt;
+	text-align: center;
+	font-weight: bold;
+	padding: 3px;
+	color: #696969;
+}
+
+p.NEXToption	/* - - CER MADE next/or option DEPRICATED - - - */
+{
+	letter-spacing: 0.25;
+	margin: 10px 20% 10px 5%;
+	font-size: 11pt;
+	line-height: 16pt;
+	text-align: center;
+	color: #ffffff;
+	padding: 3px;
+	background-color: #696969;
+}
+
+p.blueNote	/*-CER- for tip or notes*/
+{
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+	color: inherit;
+	font-size: 10pt;
+	line-height: 13pt;
+	letter-spacing: 0.25;
+	background-color: #ffffff;
+	text-align: left;
+	text-indent: 0px;
+	padding: 6px;
+	border: solid 3px #9fd4dd;
+	margin: 20px 10% 20px 10px;
+}
+
+p.redNote	/* - - CER MADE - - - */
+{
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+	color: inherit;
+	font-size: 10pt;
+	letter-spacing: 0.25;
+	line-height: 14pt;
+	background-color: #ffe4e1;
+	border: solid 2px #ffd1cc;
+	margin: 20px 20% 10px 20px;
+	padding: 3px;
+}
+
+p.TableEntryLeftAr9pt	/* CER MADE = minimize general text and lineheight properties in a table entry (probs also used in ProjectNotes topics - - - */
+{
+	letter-spacing: 0.25;
+	color: inherit;
+	font-size: 9pt;
+	line-height: 12pt;
+	margin: 6px 3px 3px;
+}
+
+p.TopicIntroTile	/*  CER MADE = first line in the topic that delclare purpose or task*/
+{
+	letter-spacing: 0.25;
+	margin: 10px 20% 10px 5%;
+	color: inherit;
+	padding: 3px;
+	font-size: 10pt;
+	line-height: 13pt;
+	border: solid 3px #f2efef;
+	background-color: #f2efef;
+}
+
+p.tealTopicIntro	/*  CER MADE = first line in the topic; delclares scope, purpose, or task that the topic covers*/
+{
+	line-height: 1.12em;
+	font-style: normal;
+	letter-spacing: 0px;
+	font-size: 1.0em;
+	padding: 5px 3px;
+	font-weight: normal;
+	font-variant: inherit;
+	text-align: inherit;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+	margin: 30px 0px 15px;
+	background-color: #cfeaf3;
+	border: solid 3px #cfeaf3;
+	color: #333333;
+	text-decoration: none;
+	text-transform: none;
+}
+
+p.cerH3topicIntro-Light	/*cer -  for topic intro. at H3 level - MQs in effect
+*/
+{
+	letter-spacing: 0px;
+	font-family: 'Segoe UI Light', 'Open Sans Light', 'Arial Narrow', Arial, sans-serif;
+	margin: 5px 0px 20px;
+	line-height: 15pt;
+	font-size: 12pt;
+	color: #333333;
+}
+
+p.cerLightText	/*to control para font in deep content level*/
+{
+	line-height: 16pt;
+	margin: 10px 0px;
+	letter-spacing: 0px;
+	font-size: 11pt;
+	font-family: 'Segoe UI Light', 'Open Sans Light', 'Arial Narrow', Arial, sans-serif;
+	color: inherit;
+	padding: 0px;
+}
+
+p.TIP-Note	/*cer - made to control TIP NOTES*/
+{
+	letter-spacing: 0.25;
+	margin: 10px 20% 10px 5%;
+	color: inherit;
+	padding: 3px;
+	font-size: 10pt;
+	line-height: 13pt;
+	background-color: #dceef1;
+	border: solid 2px #dceef1;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+}
+
+p.tealText-TopicIntro	/*cer Topic Intro for general info topics*/
+{
+	line-height: 1.12em;
+	color: #232323;
+	font-style: normal;
+	letter-spacing: 0px;
+	margin: 20px 0px 15px;
+	font-size: 1.0em;
+	padding: 5px 3px;
+	font-weight: normal;
+	font-variant: inherit;
+	text-transform: inherit;
+	text-align: inherit;
+	text-decoration: inherit;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+	border: solid 0px transparent;
+}
+
+p.cerSmall-blanklineSpacer	/*cer to insert a small linehight paragraph return that is blank but provides verticle space without requiring margins*/
+{
+	letter-spacing: 0px;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+	font-weight: normal;
+	font-size: 5pt;
+	line-height: 5pt;
+	margin: 0px;
+}
+
+p.cerLight-Caption12pt777	/*CER Open Sans 12pt #777 */
+{
+	letter-spacing: 0px;
+	margin: 10px 0px 20px;
+	line-height: 16pt;
+	font-family: 'Segoe UI Light', 'Open Sans Light', 'Arial Narrow', Arial, sans-serif;
+	font-size: 13pt;
+	color: #555;
+}
+
+span.span_ScreenLINK-needed	/*CER - used in DEV. demark future LINK TEXT to become a LINK (X/Href) to Topic or PDF File*/
+{
+	font-style: italic;
+	font-size: 11pt;
+	font-family: inherit;
+	text-decoration: underline;
+	color: #e20808;
+	background-color: #ffff7c;
+	font-weight: bold;
+}
+
+span.span_Italics	/* - - CER MADE - - - */
+{
+	font-style: italic;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+span.span_Bold	/* - - CER MADE - - - */
+{
+	font-weight: bold;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+span.span_Field	/* - - CER MADE - - - */
+{
+	font-family: 'Segoe UI Semibold', 'Open Sans Semibold', Arial, sans-serif;
+	font-size: inherit;
+}
+
+span.span_Field-12pt	/*CER ADDED*/
+{
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+span.span_Field-Button	/*CER - to facilitate button clicks*/
+{
+	color: #ffffff;
+	border-radius: 5px;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: #333333;
+	border: solid 1px #333333;
+	padding: 0px 4px 0px 5px;
+	margin: 0px 3px;
+}
+
+span.span_ScreenName	/* - - CER MADE - - - */
+{
+	font-style: italic;
+	font-family: inherit;
+	font-size: inherit;
+	text-transform: capitalize;
+}
+
+span.span_ScreenNamBold
+{
+	font-style: italic;
+	font-family: inherit;
+	font-weight: bold;
+	line-height: 11pt;
+	font-size: inherit;
+}
+
+span.span_Caption	/* - - CER MADE - FOR TABLES - - - */
+{
+	font-style: italic;
+	font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+span.span_blueNote	/* - - CER MADE - VERY LIGHT TEAL - - */
+{
+	font-style: normal;
+	font-family: Arial;
+	background-color: #c5e4ee;
+	border: solid 2px #c5e4ee;
+}
+
+span.span_ScreenName9pt	/* - - CER MADE - - - */
+{
+	font-style: italic;
+	font-family: inherit;
+	font-size: 9pt;
+}
+
+span.span_ScreenTitle-U	/*   CER MADE = underlined and italics*/
+{
+	font-style: italic;
+	font-size: 11pt;
+	text-decoration: none;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+}
+
+span.span_SnapCaption	/* - - CER MADE = for PURPLE captions that identify which screen is in the thumbnails - - - */
+{
+	font-family: Arial;
+	font-style: normal;
+	color: #6495ed;
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+span.span_Field-Button-Teal	/*CER - subtopic choices from landing or top of topic*/
+{
+	font-weight: normal;
+	color: #222;
+	font-size: 12pt;
+	background-color: #c5e4ee;
+	border: solid 2px #c5e4ee;
+	font-family: 'Segoe UI Semibold', 'Open Sans Semibold', Arial, sans-serif;
+	margin: 0px 3px;
+	padding: 2px 4px 4px 6px;
+	border-radius: 3px;
+	text-decoration: none;
+}
+
+span.cer-span_OpnSansSemiBold	/*placemark where I need to create HREF or XREF*/
+{
+	text-decoration: none;
+	font-size: inherit;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+}
+
+span.cer-spanLinkNeeded_OpnSansSemiBold	/*placeholder to indicate I need to mk a HREF or XREF to topic*/
+{
+	color: #00bfff;
+	text-decoration: underline;
+	font-family: Arial;
+}
+
+span.cer-span_OSSB-MgBtm
+{
+	text-decoration: none;
+	font-size: 10pt;
+	font-weight: normal;
+	color: c5e4ee;
+	margin: 0px;
+	padding: 0px 0px 5px;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+}
+
+span.cer-span_OSSB-btmItem
+{
+	font-size: 10pt;
+	font-weight: normal;
+	margin: 0px;
+	padding-bottom: 5px;
+}
+
+td.cer-tdTeal-c5e4ee
+{
+	background-color: #c5e4ee;
+}
+
+span.span_Field-Button-gray	/*cer conventions example for cross-link button/choice*/
+{
+	font-weight: normal;
+	margin: 0px;
+	padding: 1px 7px;
+	font-family: 'Segoe UI Semibold', 'Open Sans Semibold', Arial, sans-serif;
+	color: #5f9ea0;
+	border: solid 2px #dcdcdc;
+	background-color: #dcdcdc;
+	text-decoration: none;
+	border-radius: 0px;
+	font-size: 11pt;
+}
+
+span.cer-span_SemiBold	/*cer SemiBold - accent word - in lower case */
+{
+	font-family: 'Segoe UI Semibold', 'Open Sans Semibold', Arial, sans-serif;
+	font-size: inherit;
+}
+
+MadCap|dropDownHead
+{
+	font-family: 'Segoe UI Semibold', 'Open Sans Semibold', Arial, sans-serif;
+	font-weight: normal;
+}
+
+/*  - - - - - - - - - - - - -  BELOW are the HOME-PAGE STYLE-CLASSES for responsive Tiles and QuickLink Tiles for TABLET MEDIA-QUERY. cer  - - - - - */
+
+@media only screen and (max-width: 1279px)
+{
+	html.home-topic .body-container
+	{
+		margin-left: 0;
+	}
+
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 49%;
+		margin-left: 0%;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 49%;
+		margin-left: 2%;
+	}
+
+	div.home-tiles-layout > div:nth-child(1)
+	{
+		width: 40%;
+		margin-left: 30%;
+	}
+
+	div.home-tiles-layout > div:nth-child(2)
+	{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	div.quick-links > div:nth-child(1)
+	{
+		width: 24%;
+		margin-left: 0%;
+	}
+
+	div.quick-links > div:nth-child(2)
+	{
+		width: 24%;
+		margin-left: 14%;
+	}
+
+	div.quick-links > div:nth-child(3)
+	{
+		width: 24%;
+		margin-left: 14%;
+	}
+
+	div.quick-links > div:nth-child(4)
+	{
+		width: 24%;
+		margin-left: 19%;
+	}
+
+	div.quick-links > div:nth-child(5)
+	{
+		width: 24%;
+		margin-left: 14%;
+	}
+
+	p.redNote
+	{
+		line-height: 12pt;
+		margin: 20px 20px 10px 10px;
+	}
+
+	p.tealTopicIntro
+	{
+		margin: 20px 0px 15px;
+		line-height: 1.12em;
+		font-size: 1.0em;
+	}
+
+	a.cerPDF-RelatedTopics
+	{
+		text-decoration: underline;
+	}
+
+	div.cer-topic-layout
+	{
+		padding: 3%;
+		width: 95%;
+	}
+
+	img
+	{
+		margin: 0px 0px 0px 10px;
+		mc-thumbnail: popup;
+	}
+
+	img.cerThumbnail-popup
+	{
+		mc-thumbnail: popup;
+	}
+
+	img.cerThumbnail-hvrPop-framed
+	{
+		mc-thumbnail: popup;
+	}
+
+	td.cer-tdDarkGrayBtn
+	{
+		font-size: 11pt;
+	}
+}
+
+/*  - - - - - - - - - - - - -  BELOW are the MOBILE MEDIA QUERY  for responsive Tiles,  QuickLink Tiles, HEADING Tags, P Tags, etc.   - - - - - */
+
+@media only screen and (max-width: 767px)
+{
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-top: 5%;
+	}
+
+	div.home-tiles-layout p
+	{
+		line-height: 1.2;
+	}
+
+	div.quick-links > div:nth-child(1)
+	{
+		width: 49%;
+		margin-left: 0;
+	}
+
+	div.quick-links > div:nth-child(2)
+	{
+		width: 49%;
+		margin-left: 2%;
+	}
+
+	div.quick-links > div:nth-child(3)
+	{
+		width: 49%;
+		margin-left: 0;
+	}
+
+	div.quick-links > div:nth-child(4)
+	{
+		width: 49%;
+		margin-left: 2%;
+	}
+
+	div.quick-links > div:nth-child(5)
+	{
+		width: 49%;
+		margin-left: 25.5%;
+	}
+
+	h1
+	{
+		margin: 8px 0px;
+		font-size: 18.0pt;
+	}
+
+	h2
+	{
+		font-size: 16pt;
+		margin: 8px 0px;
+	}
+
+	h2.cerQuickLinks
+	{
+		font-size: 16pt;
+	}
+
+	p
+	{
+		line-height: 12pt;
+		font-size: 10pt;
+		margin: 6px 0px;
+	}
+
+	p.tealTopicIntro
+	{
+		margin: 8px 2px;
+		line-height: 11pt;
+		font-size: 10pt;
+	}
+
+	p.redNote
+	{
+		font-size: 9pt;
+		line-height: 12pt;
+		margin: 10px 7px 5px 3px;
+	}
+
+	p.cerLight-Caption12pt777
+	{
+		font-size: 11pt;
+		line-height: 13pt;
+		margin: 5px 2px;
+		color: #444;
+	}
+
+	p.cerH3topicIntro-Light
+	{
+		font-size: 11pt;
+	}
+
+	p.cerLightText
+	{
+		font-size: 10pt;
+		line-height: 12pt;
+		margin: 6px 0px;
+	}
+
+	MadCap|dropDown.cer-DD-Lvl3
+	{
+		border-bottom: solid 1px #ccc;
+		border-width: 1px;
+	}
+
+	li.cer-Condense-Items
+	{
+		margin: 6px 0px;
+	}
+
+	a.cerPDF-RelatedTopics
+	{
+		text-decoration: underline;
+		font-size: 10pt;
+	}
+
+	div.cer-topic-layout
+	{
+		width: 100%;
+		padding: 2px;
+	}
+
+	div.side-content-toptoolbar	/*Container for TopicToolbar proxy (copied from dashboard proj Main Styles.CSS) */
+	{
+		
+	}
+
+	td.td_TableHeader
+	{
+		font-size: 10pt;
+	}
+
+	span.span_Field
+	{
+		font-size: inherit;
+	}
+
+	div.topic-snaps-GetStart
+	{
+		margin: 6px;
+	}
+
+	MadCap|dropDownHead.DD-TealHead
+	{
+		font-size: 16pt;
+	}
+
+	img
+	{
+		margin: 0px 0px 0px 3px;
+		mc-thumbnail: popup;
+	}
+
+	img.cerImgRelTopics
+	{
+		
+	}
+
+	img.cerImgPaddingQkLinks
+	{
+		margin: 0px;
+		padding: 3px;
+	}
+
+	img.cerThumbnail-popup
+	{
+		mc-thumbnail: popup;
+	}
+
+	span.span_SnapCaption
+	{
+		letter-spacing: 0.12px;
+		font-size: 9pt;
+	}
+
+	img.cerThumbnail-hvrPop-framed
+	{
+		mc-thumbnail: popup;
+	}
+
+	td.cer-tdDarkGrayBtn
+	{
+		font-size: 11pt;
+	}
+
+	span.span_Field-Button-Teal
+	{
+		font-size: 10pt;
+	}
+
+	div.pdf-Cover-Layout
+	{
+		width: 100%;
+	}
+}
+
+/*  - - - - - - - - - - - - - - - - -  BELOW are the STYLE-CLASSES for PRINT MEDIA-QUERY. cer  - - - - - - - - - - - - - - - - - */
+
+@media print
+{
+	MadCap|xref
+	{
+		font-weight: normal;
+		mc-format: '{quote}{para}{quote} {pageref}';
+		text-decoration: none;
+	}
+
+	h1
+	{
+		font-size: 20pt;
+		margin: 10pt 0px;
+		mc-heading-format: 'inherit';
+		mc-heading-level: 1;
+	}
+
+	p.tealTopicIntro
+	{
+		border: solid 3px #e8f2f6;
+		background-color: #e8f2f6;
+		font-size: 11pt;
+		line-height: 14pt;
+		margin: 8px 2px;
+	}
+
+	p.redNote
+	{
+		line-height: 12pt;
+		margin: 10pt 0px 6pt 5px;
+	}
+
+	h2
+	{
+		margin: 6px 0px;
+		mc-heading-level: 2;
+		font-size: 20pt;
+	}
+
+	h2.cerQuickLinks
+	{
+		font-size: 16pt;
+	}
+
+	h3
+	{
+		mc-heading-level: 3;
+	}
+
+	p.cerLight-Caption12pt777
+	{
+		font-size: 11pt;
+		line-height: 13pt;
+		margin: 5px 0px;
+		color: #555;
+	}
+
+	p.cerH3topicIntro-Light
+	{
+		font-size: 11pt;
+	}
+
+	p
+	{
+		line-height: 15pt;
+		margin: 6px 0px;
+	}
+
+	p.cerLightText
+	{
+		line-height: 15pt;
+		margin: 6px 0px;
+	}
+
+	li.cer-Condense-Items
+	{
+		margin: 6px 0px;
+	}
+
+	a.cerPDF-RelatedTopics
+	{
+		text-decoration: underline;
+		color: #333333;
+	}
+
+	div.cer-topic-layout
+	{
+		width: 100%;
+		padding: 3mm;
+	}
+
+	MadCap|dropDownHead.DD-TealHead
+	{
+		border: solid 2px #dddddd;
+		background-color: #dddddd;
+	}
+
+	img
+	{
+		margin: 0px 0px 0px 20px;
+		mc-thumbnail: none;
+	}
+
+	img.cerThumbnail-popup
+	{
+		mc-thumbnail: normal;
+		width: 300px;
+	}
+
+	img.cerThumbnail-hvrPop-framed
+	{
+		mc-thumbnail: none;
+		background-color: #ffffff;
+		border: solid 2px #ffffff;
+	}
+
+	td.cer-tdDarkGrayBtn
+	{
+		background-color: #cccccc;
+		color: #333333;
+		text-decoration: underline;
+		font-size: 12pt;
+	}
+
+	a.cerfor-topicFooterBtnLink
+	{
+		text-decoration: underline;
+		font-size: 12pt;
+	}
+
+	span.span_Field-Button-Teal
+	{
+		font-size: 11pt;
+	}
+}
+
+/*  ABOVE ARE THE MEDIA QUERIES FOR MOBILE, TABLET AND PRINT */
+/* BELOW Forcing Property values (font-size) to a lower value; done to solve a problematic issue where I applied style-class, but flare output is not taking precedence and overriding the mysterious 20pt fonti-size on the dropdown hotspot; note that we tried several ways including defining the pseudo class for link on the hotspot) to countermand but it appears that it will not override the value any other way; which appears to have inherited or persisted the H1 font-size*/
+
+.topicToolbarProxy
+{
+	background: transparent;
+}
+
+.dropDownHotspot:link
+{
+	font-size: 17pt;
+}
+
+/* ABOVE SECTION FORCING VALUES TO SOLVE PROBLEMATIC ISSUE WHERE STYLE CLASS IS NOT BEING OBEYED BY FLARE */
+/* ==============================================================*/
+/* BELOW ARE NEW STYLE CLASSES THAT ARE ADDED LATER */
+
+p.myNotes	/*cer created for my notes to distinguis from content*/
+{
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+	color: inherit;
+	line-height: 13pt;
+	padding: 3px;
+	border: solid 3px #da70d6;
+	font-size: 11pt;
+	letter-spacing: 0.1pt;
+	margin: 6px 20% 6px 2%;
+	background-color: #fba0fb;
+}
+
+MadCap|dropDownHotspot.cerDDHS-H4-DDLVL2	/*cer made to address font props in level-2 nested dropdown heading*/
+{
+	color: #45494c;
+	font-weight: normal;
+	font-size: 16pt;
+	font-family: 'Segoe UI Semibold', 'Open Sans Semibold', Arial, sans-serif;
+}
+
+MadCap|dropDownHotspot.cerDDHS-H5-DDLVL3	/*cer made to control font of hotspot*/
+{
+	color: #45494c;
+	font-family: inherit;
+	font-style: inherit;
+	font-variant: inherit;
+	font-weight: normal;
+	font-size: 15pt;
+}
+
+h4.h4-tealText	/*cer made for 'non-drop subheadings' that appear inside a nested dropdown area */
+{
+	font-style: normal;
+	margin: 30px 0px 10px;
+	color: #4695b2;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+	font-weight: normal;
+	font-size: 14pt;
+}
+
+img.MCDropDown_Image_Icon	/* this is added to suppress an extra transparent spacer image that is inserted at runtime on level-1 dropdowns, so that first dropdown will have the same image-spacing as nested dropdowns */
+{
+	display: none;
+}
+
+h4.h4-DarkText	/*cer subheading under a dropdown with gray bg color*/
+{
+	font-style: normal;
+	margin: 30px 0px 10px;
+	color: #333333;
+	font-size: 12pt;
+	font-weight: bold;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+}
+
+a.cerPDF-RelatedTopics	/*cer made to control link text on Related Topics - esp for in PDF output. Related Topics may be used in HTML5 output too.  Condition tags determine exclusion. */
+{
+	font-size: 11pt;
+	font-family: 'Segoe UI Semibold', 'Open Sans Semibold', Arial, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	color: #4695b2;
+}
+
+span.td_TableHeader
+{
+	font-weight: bold;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+td.td_TableHeader	/*cer Bold table header text*/
+{
+	font-size: 11pt;
+	font-weight: bolder;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+}
+
+span.cerforTealQkLinkTile-TEXTsm	/*cer span to pair with anchor (but has lighter smaller font for anchor caption) */
+{
+	font-size: 10pt;
+	font-family: 'Segoe UI Light', 'Open Sans Light', Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	text-transform: capitalize;
+	letter-spacing: -0.00999999px;
+}
+
+p.footnote	/*cer local footnote not automated*/
+{
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+	color: inherit;
+	font-size: 10pt;
+	line-height: 13pt;
+	letter-spacing: 0.25;
+	text-align: left;
+	text-indent: 0px;
+	padding: 6px;
+	margin: 20px 10% 20px 10px;
+	border: solid 3px #dddddd;
+	background-color: #eeeeee;
+}
+
+p.orangeNote	/*for important notes*/
+{
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+	color: inherit;
+	font-size: 10pt;
+	line-height: 13pt;
+	letter-spacing: 0.25;
+	background-color: #ffffff;
+	text-align: left;
+	text-indent: 0px;
+	padding: 6px;
+	margin: 20px 10% 20px 10px;
+	border: solid 3px #eecd6e;
+}
+
+div.topic-snaps-GetStart	/*cer clone for Get Started page*/
+{
+	margin: 10px 0px 10px 20px;
+}
+
+img.cerImgTile-Left100pct	/*cer for tileBtns, left-justified max-width 100pct*/
+{
+	max-width: 100%;
+	padding: 8px 0px 0px 20px;
+	border: none 0px #000000;
+}
+
+div.topic-snaps-Instructs
+{
+	margin: 10px 0px 10px 30px;
+}
+
+p.li-TopicIntroItemFirst	/*cer topic item formatting*/
+{
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+	font-size: inherit;
+	color: inherit;
+	font-style: normal;
+	padding: 0px;
+	margin: 8px 0px 3px;
+}
+
+img.cerImgRelTopics	/*for icons in the 'related topics' table/links*/
+{
+	margin: 0px;
+	height: 40px;
+	padding: 4px;
+}
+
+h5.h5-DarkText	/*cer for headings you dont want in TOC*/
+{
+	font-weight: bold;
+	font-size: 12pt;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+	color: #333333;
+	font-style: normal;
+	margin: 30px 0px 10px;
+}
+
+img.cerThumbnail-popup	/*cer for popup screen thumbnails*/
+{
+	border: none;
+	max-width: 100%;
+	margin: 0px 0px 0px 20px;
+	vertical-align: middle;
+	clear: both;
+	mc-float: center;
+	padding-left: 0px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	mc-thumbnail: hover;
+}
+
+img.cerImgTinyTrim	/* inline images to trim out excessive padding or margins that are inline with the text */
+{
+	padding: 0px;
+	margin: 0px;
+	height: 15px;
+	max-height: 15px;
+}
+
+img.cerThumbnail-hvrPop-framed	/*cer for GS pg with hvr/pop for online/print and inclu. rounded "tile" bg frame */
+{
+	max-width: 100%;
+	vertical-align: middle;
+	clear: both;
+	mc-float: center;
+	mc-thumbnail: hover;
+	border-radius: 6px;
+	background-color: #222222;
+	border: solid 2px #222222;
+	margin: 3px;
+	padding: 6px;
+}
+
+img.cerThumbnail-hvrPop-UNframed	/*cer exactly like hvrPop-framed except is unframed - no BG tile*/
+{
+	max-width: 100%;
+	vertical-align: middle;
+	clear: both;
+	mc-float: center;
+	mc-thumbnail: hover;
+	border-radius: 6px;
+	margin: 3px;
+	padding: 6px;
+	width: 118px;
+	background-color: #ffffff;
+	border: solid 2px #ffffff;
+}
+
+div.topic-footer	/*cer- topic footer goes at the bottom of a topic page (not in a DD Section)*/
+{
+	padding: 5%;
+	background-color: #f5f5f5;
+	border-top: ridge 2px #cccccc;
+}
+
+span.cer-span_topicFooter	/*cer- topic footer Field Labels*/
+{
+	font-family: 'Segoe UI Semibold', 'Open Sans Semibold', Arial, sans-serif;
+	font-size: inherit;
+	color: #555555;
+}
+
+p.cer-topicFooter	/*cer topic footer controls line spacing, letter-space, text align, font, etc.*/
+{
+	margin: 10px 0px;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+	text-align: right;
+	padding-right: 15px;
+	letter-spacing: 0.12px;
+	font-size: 11pt;
+	line-height: 18pt;
+}
+
+td.cer-tdDarkGrayBtn	/*cer - to make a link appear as a button*/
+{
+	background-color: #333333;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	font-family: inherit;
+	font-weight: bold;
+	font-size: 13pt;
+	border: solid 2px #333333;
+	border-radius: 3px;
+}
+
+a.cerfor-topicFooterBtnLink	/*cer made this to control font color weight size etc for footer link buttons*/
+{
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 13pt;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+	padding: 7px 5px;
+}
+
+p.cer-topicFooterBtn	/*cer controls padding around the link text to provide the look of a button*/
+{
+	letter-spacing: 0px;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+	font-size: 12pt;
+	text-align: center;
+	margin: 0px;
+	padding: 7px 5px;
+	line-height: normal;
+}
+
+td.cer-tdDarkTealBtn	/*cer - to make a link appear as a button*/
+{
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	font-family: inherit;
+	font-weight: bold;
+	font-size: 13pt;
+	border-radius: 3px;
+	background-color: #076685;
+	border: solid 2px #076685;
+}
+
+span.span_topicFooterLink-Button	/*cer made for button effect on text links in the footer; however will work regardless of link*/
+{
+	color: #ffffff;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: #333333;
+	margin: 0px 3px;
+	border: solid 2px #333333;
+	border-radius: 4px;
+	padding: 2px 4px 4px 6px;
+}
+
+td.TEC-copyrightBand	/*cer- inside title, editions, and copyright page for printed output - PDF Guide*/
+{
+	
+}
+
+td.pdf-TEC-copyrightBand	/*cer Inside tilte, edition, copyright page for printed output - PDF Guide*/
+{
+	background-color: #c5e4ee;
+	border: solid 3px #c5e4ee;
+	padding: 3px;
+	color: #333333;
+	font-family: 'Segoe UI Semibold', 'Open Sans Semibold', Arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12pt;
+}
+
+td.pdf-TEC-TitleRowTDleft
+{
+	font-size: 12pt;
+	text-align: center;
+	color: #333333;
+	font-family: 'Segoe UI Semibold', 'Open Sans Semibold', Arial, sans-serif;
+	font-weight: bold;
+	border-right: solid 2px #c5e4ee;
+}
+
+td.pdf-TEC-titleRowTDright	/*cer controls table cell formatting for right cell on top title row*/
+{
+	color: #333333;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+	font-size: 9pt;
+	text-align: left;
+	padding: 3px;
+	font-weight: normal;
+}
+
+td.pdf-TEC-revisionRowTDleft	/*controls table cell formatting for revison cell row*/
+{
+	text-align: center;
+	font-family: 'Segoe UI Light', 'Open Sans Light', 'Arial Narrow', Arial, sans-serif;
+	font-size: 10pt;
+	font-weight: normal;
+	padding: 3px;
+	border-right: solid 2px #c5e4ee;
+	color: #333333;
+}
+
+td.pdf-TEC-revisionRowTDright	/*controls table cell formatting for right side*/
+{
+	
+}
+
+p.pdf-TEC-titleSystemName	/*cer formatting for TITLE on TEC page for PDF output*/
+{
+	line-height: 16pt;
+	letter-spacing: 0px;
+	font-family: 'Segoe UI Semibold', 'Open Sans Semibold', Arial, sans-serif;
+	margin: 0px;
+	text-align: center;
+	font-size: 13pt;
+	font-weight: bold;
+	font-style: normal;
+	color: #333333;
+	padding: 3px;
+}
+
+p.cerLightText-disclaimer	/*cer - document disclaimer text formatting*/
+{
+	letter-spacing: 0px;
+	font-family: 'Segoe UI Light', 'Open Sans Light', 'Arial Narrow', Arial, sans-serif;
+	color: #333333;
+	font-size: 9pt;
+	margin: 8px 0px 6px;
+	font-weight: normal;
+	padding: 3px;
+	line-height: 12pt;
+	text-align: justify;
+}
+
+span.pdf-span_SemiLight-Strong	/*cer used for TEC or any area where Light text needs to be stronger for callouts.*/
+{
+	font-size: inherit;
+	font-weight: normal;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+}
+
+p.pdf-TEC-topicIntro-Light	/*controls the font-related, margin, padding, etc for text on the TEC Page.*/
+{
+	letter-spacing: 0px;
+	font-family: 'Segoe UI Light', 'Open Sans Light', 'Arial Narrow', Arial, sans-serif;
+	margin: 5px 0px 20px;
+	line-height: 15pt;
+	font-size: 12pt;
+	color: #333333;
+}
+
+p.pdf-TEC-disclaimerLightText	/*controls formatting on the pdf TEC page*/
+{
+	letter-spacing: 0px;
+	font-family: 'Segoe UI Light', 'Open Sans Light', 'Arial Narrow', Arial, sans-serif;
+	color: #333333;
+	font-size: 9pt;
+	margin: 8px 0px 6px;
+	font-weight: normal;
+	padding: 3px;
+	line-height: 12pt;
+	text-align: justify;
+}
+
+div.pdf-Cover-Layout	/*cer made to control PDF Cover content layout*/
+{
+	width: 90%;
+	padding: 5px;
+}
+
+p.pdf-Cover-mainLogo	/*cer made to control where main logo displays*/
+{
+	font-style: italic;
+	font-size: 11pt;
+	text-align: right;
+	border-top: solid 1px #aaaaaa;
+}
+
+span.pdf-CoverTitle	/*cer to control format of Title on the Cover Page PDF output*/
+{
+	font-family: 'Segoe UI Semibold', 'Open Sans Semibold', Arial, sans-serif;
+	font-size: 26pt;
+	color: #96aab1;
+}
+
+span.pdf-CoverTitle-accent	/*cer to control format of Title on the Cover Page PDF output*/
+{
+	font-family: 'Segoe UI Semibold', 'Open Sans Semibold', Arial, sans-serif;
+	font-size: 26pt;
+	color: #55bce1;
+}
+
+span.pdf-frontMatter-title	/*cer made to give effect of heading but wont pick up in PRINTED TOC when proxy is generated*/
+{
+	color: #96aab1;
+	font-size: 20pt;
+	font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+}
+
